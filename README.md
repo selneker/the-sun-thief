@@ -9,11 +9,12 @@ Behind the missing slice lies the night, and folded into the gap a small galaxy 
 burning. The stolen slice drifts up into the dark, still warm, trailing embers. Below,
 a cottage keeps one lamp lit.
 
-The picture is not stock art and not a photograph: it is drawn by the program in
-`art/gen_sun_thief.py`, which lays out a 1024×1024 SVG scene — the sun's convection
-granulation, its sunspot groups with penumbrae, four plasma prominences standing off
-the limb, the milky way, the galaxy inside the wound — and rasterises it to
-`entry.png`.
+The picture is not stock art and not a photograph. It is a drawing, made by a program:
+a 1024×1024 SVG scene — the sun's convection granulation, its sunspot groups with
+penumbrae, four plasma prominences standing off the limb, the milky way, the galaxy
+folded into the wound — rasterised to a PNG. The program that draws it and the render
+itself are in the agent transcripts uploaded with this entry; the repository keeps the
+finished piece and the entrypoint the grader runs.
 
 ## The entry
 
@@ -24,15 +25,8 @@ the limb, the milky way, the galaxy inside the wound — and rasterises it to
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-## The artwork
-
-```sh
-sh art/render.sh          # needs python3, google-chrome and pillow
-```
-
-`art/gen_sun_thief.py` writes `art/sun-thief.svg`; headless Chrome rasterises it to
-`art/sun-thief-final.png` — the exact bytes of `entry.png`. The generator is seeded
-(`random.Random(20261113)`), so the same source always paints the same picture.
+`entry.png` is a whole 1024×1024 PNG of 1,017,441 bytes; the rules cap a piece at
+1 MiB (1,048,576 bytes) and 1024 by 1024 pixels.
 
 ---
 
