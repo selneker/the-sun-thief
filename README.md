@@ -25,7 +25,7 @@ piece and the entrypoint the grader runs.
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-`entry.png` is a whole 1024×1024 PNG of 1,023,046 bytes; the rules cap a piece at
+`entry.png` is a whole 1024×1024 PNG of 1,023,579 bytes; the rules cap a piece at
 1 MiB (1,048,576 bytes) and 1024 by 1024 pixels.
 
 ---
