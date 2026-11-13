@@ -1,5 +1,5 @@
 // The Sun Thief — coolest-art-01 entry.
-// The piece is entry.png beside this file; the grader sees exactly those bytes.
+// The piece is entry.png beside this file; the grader sees exactly those bytes, and nothing else is written.
 // This program copies the image to /output/entry.png (MAKEFUN_OUTPUT_DIR stands in outside the grader).
 // It writes nothing else, so two runs produce the same file.
 
